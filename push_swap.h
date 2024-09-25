@@ -6,7 +6,7 @@
 /*   By: mosleima <mosleima@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/21 11:26:49 by mosleima          #+#    #+#             */
-/*   Updated: 2024/09/15 10:55:22 by mosleima         ###   ########.fr       */
+/*   Updated: 2024/09/25 11:46:24 by mosleima         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ typedef struct s_node
 
 int					ft_atoi_safe(const char *str, int *error);
 int					calculate_individual_cost(int index, int len);
-void				calculate_push_cost(t_node *a, t_node *b, int is_a_cost);
+void				calculate_push_cost(t_node *a, t_node *b);
 t_node				*find_cheapest(t_node *a);
 void				parse_string_to_list(t_node **head, const char *input);
 void				parse_argv_to_list(t_node **head, int argc, char **argv);
@@ -63,5 +63,6 @@ t_node				*max_node(t_node *head);
 int					is_sorted(t_node *stack);
 int					count_nodes(t_node *list);
 void				sort_three(t_node **stack);
+
 
 #endif

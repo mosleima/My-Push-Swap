@@ -6,7 +6,7 @@
 /*   By: mosleima <mosleima@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 17:24:20 by mosleima          #+#    #+#             */
-/*   Updated: 2024/09/15 10:57:36 by mosleima         ###   ########.fr       */
+/*   Updated: 2024/09/25 11:45:24 by mosleima         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,14 +43,13 @@ int	calculate_individual_cost(int index, int len)
 	return (index);
 }
 
-void	calculate_push_cost(t_node *a, t_node *b, int is_a_cost)
+void	calculate_push_cost(t_node *a, t_node *b)
 {
 	int	len_a;
 	int	len_b;
 	int	cost_a;
 	int	cost_b;
 
-	(void)is_a_cost;
 	len_a = count_nodes(a);
 	len_b = count_nodes(b);
 	while (a)

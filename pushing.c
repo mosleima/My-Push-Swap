@@ -6,7 +6,7 @@
 /*   By: mosleima <mosleima@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 13:59:11 by mosleima          #+#    #+#             */
-/*   Updated: 2024/09/15 10:57:55 by mosleima         ###   ########.fr       */
+/*   Updated: 2024/09/25 11:46:54 by mosleima         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static void	push_all_except_three(t_node **a, t_node **b)
 	while (count_nodes(*a) > 3)
 	{
 		set_target_a(*a, *b);
-		calculate_push_cost(*a, *b, 1);
+		calculate_push_cost(*a, *b);
 		perform_push(a, b);
 	}
 }
